@@ -202,11 +202,11 @@ void Revolve()
 	switch (choose)
 	{
 	case 1:
-		T[0][0]=Cos;T[0][1]=Sin;T[1][0]=-Sin;T[1][1]=Cos;break;
+		T[1][1]=Cos;T[1][2]=Sin;T[2][1]=-Sin;T[2][2]=Cos;break;
 	case 2:
 		T[0][0]=Cos;T[0][2]=-Sin;T[2][0]=Sin;T[2][2]=Cos;break;
 	case 3:
-		T[1][1]=Cos;T[1][2]=Sin;T[2][1]=-Sin;T[2][2]=Cos;break;
+		T[0][0]=Cos;T[0][1]=Sin;T[1][0]=-Sin;T[1][1]=Cos;break;
 	default:
 		break;
 	}
